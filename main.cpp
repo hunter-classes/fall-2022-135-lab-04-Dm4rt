@@ -3,6 +3,7 @@
 #include "checkerboard.h"
 #include "cross.h"
 #include "lower.h"
+#include "upper.h"
 
 int main(){
   std::string result;
@@ -44,6 +45,16 @@ int main(){
   std::cout << "\n\n";
   result = lower(9);
   std::cout << "lower(9):\n";
+  std::cout << result;
+  std::cout << "\n------------------\n"; // seperator
+
+  //UPPER TRIANGLE
+  result = upper(6);
+  std::cout << "upper(6):\n";
+  std::cout << result;
+  std::cout << "\n\n";
+  result = upper(9);
+  std::cout << "upper(9):\n";
   std::cout << result;
   std::cout << "\n------------------\n"; // seperator
   
